@@ -9,16 +9,13 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy app source
 COPY . .
 
 # Build
 RUN ionic build
-
-# Bind the port that the image will run on
-EXPOSE 8080
 
 ## Run 
 FROM nginx:alpine
