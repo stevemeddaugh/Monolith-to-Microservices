@@ -7,6 +7,6 @@ data:
   JWT_SECRET: ___INSERT_JWT_SECRET___
   POSTGRES_DB: ___INSERT_POSTGRES_DB___
   POSTGRES_HOST: ___INSERT_POSTGRES_HOST___
-  URL: http://localhost:8100  
+  URL: https://187A8046A6352C2662AC7A3D2AC0F957.gr7.us-west-2.eks.amazonaws.com:8100  
 metadata:
   name: env-config
