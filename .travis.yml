@@ -22,7 +22,7 @@ before_install:
   - unzip awscliv2.zip
   - sudo ./aws/install
   - mkdir ${HOME}/.aws
-  ## - echo "$AWS_PROFILE_B64" | base64 --decode > ${HOME}/.aws/credentials
+  - echo "$AWS_PROFILE" | base64 --decode > ${HOME}/.aws/credentials
   - echo "$KUBE_CONFIG" | base64 --decode > ${HOME}/.kube/config # include to travis console env variable :cat ${HOME}/.kube/config | base64 | pbcopy
   # docker credentials
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin # set Docker username and password in Travis console
