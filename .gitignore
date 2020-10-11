@@ -42,3 +42,6 @@ set_env.sh
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+*-secret.yaml
+Backup/
