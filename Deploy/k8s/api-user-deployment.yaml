@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: api-user
   labels:
-    app: api-user
+    service: api-user
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: api-user
+      service: api-user
   template:
     metadata:
       labels:
-        app: api-user
+        service: api-user
     spec:
       containers:
       - name: udagram-api-user
